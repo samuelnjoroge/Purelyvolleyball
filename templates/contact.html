@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> contact us </title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="contact">
+        <div class="contact">
+        <h2>Contact Us</h2>
+        <p>The page can be used to contact us about issues with the website or questions about do not send filler messages they will not be responeded to.</p>
+        </div>
+        <div class="navbar">
+            <ul>
+              <li class="nav-contact"><a href="/">Home</a></li>
+              <li class="nav-contact"><a href="about">About</a></li>
+              <li class="nav-contact"><a href="service">Services</a></li>
+              <li class="nav-contact"><a href="contact">Contact</a></li>
+              <li class="nav-contact"><a href="signup">signup</a></li>
+            </ul>
+            </div>
+    <div class="container">
+        <div= class="contactInfo">
+            <div class="box">
+                <div class="info"></div>
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>200 orlando pl<br>San leandro</br><br>43894</br></p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>510-909-7175</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>currioussamvb@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <body>
+            <div class="container">
+              <h1>Contact Us</h1>
+              <form class="contact-form" method="POST" action="submit_form.php">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </body>
+          
